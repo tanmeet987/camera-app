@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    border: rgb(221, 170, 82) solid 1.3rem;
+  }
+  
+  #record,
+  #capture {
+    z-index: 3;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    position: fixed;
+    border: 5px solid white;
+    background: black;
+  }
+  
+  #record {
+    top: 40vh;
+    right: 20px;
+   
+  }
+  
+  #record div{
+    height: 50%;
+    width: 58%;
+    margin: auto;
+   
+    border-radius: 50%;
+    background: red;
+  }
+  
+  #capture div{
+    height: 50%;
+    width: 58%;
+    margin: auto;
+    
+    border-radius: 50%;
+    background: rgb(235, 231, 231);
+  }
+  
+  #capture {
+    top: 50vh;
+    right: 20px;
+    margin-top:20px;
+  }
+  
+  
+  #video-container {
+    margin-left: 23rem;
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+    padding-bottom: 2.8rem
+  }
+  
+  video {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .recordAni{
+      animation: zoom-in-out 0.8s infinite;
+  }
+  .captureAni{
+      animation: zoom-in-out 1s;
+  }
+  
+  @keyframes zoom-in-out {
+      0%{
+          transform: scale(1);
+      }
+      50%{
+          transform: scale(1.1);
+      }
+      100%{
+          transform: scale(1);
+      }
+      
+  }
+  
+  .filter-container{
+    width: 5rem;
+    height: 60vh;
+    border: 2px solid rgb(177, 47, 47);
+    position: fixed;
+    top:20vh;
+    left:20px;
+    z-index:3;
+  }
+  .filter{
+    width:100%;
+    height:calc(100%/6);
+    border: 1px solid white;
+      /* background-image: url(https://static.scientificamerican.com/sciam/cache/file/4E0744CD-793A-4EF8-B550B54F7F2C4406_source.jpg);  */
+     background-image: url(nan.jpg); 
+    background-size: contain;
+   
+  }
+  
+  .filter-div{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .zoom-container{
+    height: 26vh;
+    width: 3.5rem;
+    position: fixed;
+    top:3vh;
+    right: 20px;
+    z-index:3;
+  }
+  
+  .zoom-container div{
+    height: 50%;
+    width: 100%;
+    color:white;
+    font-size: 3.9rem;
+    text-align: center;
+    margin: auto; 
+    background-image: url(nan.jpg);
+    font-weight: bold;
+    border: rgb(221, 170, 82) solid 2px;
+  }
+  
+  #gallery{
+      height: 35px;
+      width: 6.5rem;
+      position: fixed;
+      top: 35.78rem;
+      left: 76.55rem;
+      font-size: 1rem;
+      font-weight: bolder;
+      color: white;
+      background-image: url(nan.jpg);
+      border: rgb(221, 170, 82) solid 2px;
+  }

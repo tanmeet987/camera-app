@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+   background: linear-gradient(360deg,rgb(182, 45, 148),white,rgb(124, 29, 133),black,white,grey);
+    
+  }
+  
+  
+  .media-container {
+    border:10px rgb(202, 202, 202) solid;
+    margin-top: 10px;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  
+  .media {
+    width: 100%;
+    height: 80%;
+    border: 1px solid;
+  }
+  button {
+    width: 100%;
+    height: 10%;
+    border: 1px solid;
+  }
+  .download {
+    font-family: "Dancing Script", cursive;
+    background-color: rgb(6, 145, 6);
+    font-size: 12px;
+    font-weight: 900;
+    color: aliceblue;
+    border: none;
+    
+  }
+   .delete {
+   
+    font-family: "Dancing Script", cursive;
+    background-color: rgb(255, 115, 0);
+    font-size: 12px;
+    font-weight: 900;
+    color: aliceblue;
+    border: none;
+  } 
+  img,
+  video {
+    height: 100%;
+    width: 100%;
+  }
